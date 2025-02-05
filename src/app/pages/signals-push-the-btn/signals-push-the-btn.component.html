@@ -1,0 +1,27 @@
+<h2>Signals / Push The Button</h2>
+
+<p>
+  Exponent:
+  <input
+    type="number"
+    pattern="[0-9]*"
+    [value]="exponent()"
+    (input)="onExponentChange($event)"
+    #exponentInput
+  />
+</p>
+
+<p>1. Current value: {{ counter() }}</p>
+
+<p>
+  2. The value of a base raised to a power of <strong>{{ exponent() }}</strong
+  >: {{ counterPow() }}
+</p>
+
+<p>3. The natural logarithm (base e) of a number: {{ counterLog() }}</p>
+
+<p>4. The square root of a number: {{ counterSqr() }}</p>
+
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="increment()">Increment</button>

@@ -1,10 +1,9 @@
-import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { concat, Observable, of } from "rxjs";
 
 @Component({
   selector: "app-rxjs-concat",
-  imports: [CommonModule],
+  imports: [],
   templateUrl: "./rxjs-concat.component.html",
   styleUrl: "./rxjs-concat.component.css",
 })
