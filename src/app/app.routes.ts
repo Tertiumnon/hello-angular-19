@@ -9,16 +9,16 @@ export const routes: Routes = [
   {
     path: "push-the-btn",
     loadComponent: () =>
-      import(
-        "./pages/push-the-btn/push-the-btn.component"
-      ).then((c) => c.PushTheBtnComponent),
+      import("./pages/push-the-btn/push-the-btn.component").then(
+        (c) => c.PushTheBtnComponent,
+      ),
   },
   {
-    path: "signals/push-the-btn",
+    path: "cdr/interval",
     loadComponent: () =>
-      import(
-        "./pages/signals-push-the-btn/signals-push-the-btn.component"
-      ).then((c) => c.SignalsPushTheBtnComponent),
+      import("./pages/cdr-interval/cdr-interval.component").then(
+        (c) => c.CdrIntervalComponent,
+      ),
   },
   {
     path: "rxjs/push-the-btn",
@@ -33,6 +33,13 @@ export const routes: Routes = [
       import("./pages/rxjs-concat/rxjs-concat.component").then(
         (c) => c.RxjsConcatComponent,
       ),
+  },
+  {
+    path: "signals/push-the-btn",
+    loadComponent: () =>
+      import(
+        "./pages/signals-push-the-btn/signals-push-the-btn.component"
+      ).then((c) => c.SignalsPushTheBtnComponent),
   },
   {
     path: "**",
