@@ -1,1 +1,21 @@
-<p>rxjs-push-the-btn works!</p>
+<p>
+  Exponent:
+  <input
+    type="number"
+    pattern="[0-9]*"
+    [formControl]="exponent"
+    [value]="exponent.value"
+  />
+</p>
+
+<p>1. Current value: {{ counter$ | async }}</p>
+
+<p>
+  2. The value of a base raised to a power of
+  <strong>{{ exponent.value }}</strong
+  >:
+  {{ counterPow$ | async }}
+</p>
+
+<button (click)="decrement()">Decrement</button>
+<button (click)="increment()">Increment</button>

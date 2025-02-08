@@ -1,0 +1,11 @@
+<nav>
+  @for (item of itemS(); track item.title) {
+  <span
+    ><a [routerLink]="item.path" routerLinkActive="active">{{
+      item.title
+    }}</a></span
+  >
+  } @empty {
+  <span>There are no items.</span>
+  }
+</nav>

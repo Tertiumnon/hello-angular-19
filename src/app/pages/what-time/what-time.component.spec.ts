@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CdrIntervalComponent } from './cdr-interval.component';
+import { WhatTimeComponent } from './what-time.component';
 
-describe('CdrIntervalComponent', () => {
-  let component: CdrIntervalComponent;
-  let fixture: ComponentFixture<CdrIntervalComponent>;
+describe('WhatTimeComponent', () => {
+  let component: WhatTimeComponent;
+  let fixture: ComponentFixture<WhatTimeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CdrIntervalComponent]
+      imports: [WhatTimeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CdrIntervalComponent);
+    fixture = TestBed.createComponent(WhatTimeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

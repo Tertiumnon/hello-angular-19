@@ -19,11 +19,6 @@ export class SignalsPushTheBtnComponent {
   counterLog = computed(() => Math.log(this.counter()));
   counterSqr = computed(() => Math.sqrt(this.counter()));
 
-  constructor() {
-    console.log(`exponent value: ${this.exponent()}`);
-    console.log(`counter value: ${this.counter()}`);
-  }
-
   onExponentChange(event: Event) {
     const val = (event.target as HTMLInputElement).value;
     if (val === "" || Number(val) <= 0) {
